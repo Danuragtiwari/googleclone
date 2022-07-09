@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+}
+
+
+/* styling for body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.search-results {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 10px 10px 2px rgba(56, 56, 56, 0.103);
+    text-decoration: none;
+}
+
+#sh3 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer {
+    font-size: 10px;
+    text-align: center;
+}
+
+#th3 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#fh3 {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#web-result-id {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* styling of the header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+
+/* link sytling */
+
+.header a {
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+    text-decoration: inherit;
+}
+
+
+/* giving the link an hovering style */
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+
+/* styling of div element in the header */
+
+.header_right {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+
+/* styling of google icons */
+
+.header_right .header_app {
+    margin-right: 10px;
+}
+
+
+/* mainbody styling */
+
+.mainbody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+}
+
+.mainbody img {
+    object-fit: contain;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+/* search input styling */
+
+.search_input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    margin-top: 40px;
+    width: 40vw;
+    margin: 0 auto;
+    max-width: 560px;
+}
+
+
+/* styling input */
+
+.search_input input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+
+/* styling icons */
+
+.search_input .material-icons {
+    color: grey;
+}
+
+
+/* styling search_buttom div */
+
+.search_button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* styling botton */
+
+.search_button button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* done!!! */

@@ -1,4 +1,4 @@
-{% load static %%}
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,11 +8,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home.css' %}.">
     <title>Gooooooogle</title>
 </head>
 
 <body>
-
+    <div class="header">
+        <!-- this is a left side div with a link in it-->
+        <div class="header_left">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </div>
+    
+        <div class="header_right">
+            <a href="https://mail.google.com/">Gmail</a>
+            <a href="https://www.google.com/search?q=images&oq=images&aqs=chrome..69i57j0j0i3j0j0i433j69i61j69i60j69i61.969j0j7&sourceid=chrome&ie=UTF-8">images</a>
+            <a href="#"> <span class="material-icons header_app"> apps</span>
+            </a>
+            <span class="material-icons"> account_circle</span>
+        </div>
+    </div>
+    <!-- end of hearder section -->
+    
+    <!-- mainbody sectiion start here -->
+    <div class="mainbody">
+        <!-- <img src="google_img.png" style="width: 500px;" alt="google logo"> -->
+        <!-- This is the way to make images show up in django-->
+        <img src="{% static 'google.png' %}" alt="My image">
+    
+    <!--     search engine section-->
+                <form action="go/" method="POST">
+                     {% csrf_token %}
+                    <div class="search">
+                        <div class="search_input">
+                            <span class="material-icons">search</span>
+                            <input type="text" name="go" autofocus x-webkit-speech>
+                            <span class="material-icons">mic</span>
+                        </div>
+    
+                        <div class="search_button">
+                            <a href="" ><button type="submit">Google search</button></a>
+                            <button>I'm feeling lucky</button>
+                        </div>
+                    </div>
+                </form>
+    
+    
+    
+    <!--    <form method="POST" action="search">-->
+    <!--        {% csrf_token %}-->
+    <!--        <input class="search_input" type="text" name="search" autofocus x-webkit-speech/>-->
+    <!--        <div class="search-nav">-->
+    <!--            <div class="search_button">-->
+    <!--                <a href="#">-->
+    <!--                    <button type="submit">Google Search</button>-->
+    <!--                    <button>I'm feeling lucky</button>-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </form>-->
+    
+    </div>
+    <div class="footer">
+        <p>Design with &hearts;	by <a href="https://www.linkedin.com/in/danurag23/">ANURAG </a> </p>
+        <br>
+    
+    </div>
 </body>
 
 </html>
